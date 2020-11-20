@@ -1,0 +1,23 @@
+{
+  "name": "vue-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --project tsconfig.json && webpack serve --config webpack.config.js --open http://localhost:8080",
+    "build": "tsc --project tsconfig.json && webpack --config webpack.config.js",
+    "rebuild": "rm -rf dist && tsc --project tsconfig.json && webpack --config webpack.config.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.9",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.5",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

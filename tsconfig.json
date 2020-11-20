@@ -1,0 +1,15 @@
+// 编译webpack.config.ts，同时控制IDE行为
+{
+    "include": ["webpack.config.ts"],
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "ES6",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "lib": ["ES6"],
+        "paths": {
+            "@/*": ["src/*"],
+        },
+    },
+    "exclude": ["node_modules"],
+}
